@@ -2,6 +2,8 @@ package com.klef;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 public class ClientController {
@@ -15,5 +17,10 @@ public class ClientController {
 	{
 		return "Jenkins Demo";
 	}
+	@GetMapping("/test")
+	public String test() {
+		return "Deploy Spring Boot using Jenkins";
+	}
+	
 
 }
